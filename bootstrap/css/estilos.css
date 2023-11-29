@@ -1,0 +1,7 @@
+    body {
+        background-color: #244673; /* Color de fondo oscuro en formato hexadecimal */
+        color: #c9a2a2; /* Color de texto en blanco para mayor contraste */
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 20px;
+    }

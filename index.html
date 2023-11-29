@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGCA Fichero Pardo</title>
+    <style>
+            #pdfViewer {
+              width: 100%;
+              height: 700px;
+            }
+            
+          </style>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/Ajax.js"></script>
+
+  </head>
+
+  <header class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/logoagca.jpg" alt="Logo" width="150" height="150"
+          class="d-inline-block align-left mr-3">
+        <div class="text-left;">
+          <h1 class="display-3 title-text">ARCHIVO GENERAL DEL CENTROAMÉRICA</h1>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <body class="container mt-5" , style="background-color: #ffffff;">
+
+    <div class="container text-center">
+      <div class="row">
+        <div class="container">
+          <div class="col-12">
+            <h1 class="text-center shadow-lg m-5 p-3" style="color:#804000;">Fichero Pardo
+              AGCA</h1>
+          </div>
+          <br>
+          <br>
+          <div class="card" shadow-lg m-5 p-3>
+            <div class="card-body">
+              <h2 class="card-title" style="color:#804000;">Sabias Que</h2>
+              <p class="card-text">El “Catálogo Pardo” se
+                encuentra ubicado en el segundo nivel del
+                edificio del Archivo General de Centro América
+                en la ciudad de Guatemala y
+                está formado por más de un millón de tarjetas o
+                fichas descriptivas de documentación contenidas
+                en 21 muebles fichero. Estos muebles fichero
+                están numerados del 1 al 21 y cada uno de ellos
+                contiene 56 gavetas o cajas identificadas con
+                una combinación de números que identifican,
+                en primer lugar al mueble y, en segundo lugar, a
+                la gaveta.
+                Cada una de las gavetas tiene, además de la
+                combinación de números que la identifica, una
+                etiqueta con una descripción de su contenido.
+              </p>
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <div class="custom-input-group">
+                  <label class="custom-label" for="selectTema">Seleccione un tema:</label>
+                  <select class="form-control" id="selectTema"></select>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div class="custom-input-group">
+                  <label class="custom-label" for="selectSubtema">Seleccione un subtema:</label>
+                  <select class="form-control" id="selectSubtema"></select>
+                </div>
+              </div>
+            </div>
+          
+            <div class="row-cols-1">
+              <div class="col-12">
+                <div class="custom-input-group">
+                  <label class="custom-label" for="selectOpcion3">Seleccione un archivo:</label>
+                  <select class="form-control" id="selectOpcion3"></select>
+                </div>
+              </div>
+            </div>
+          
+            <div class="row">
+              <div class="col-12">
+                <button class="btn btn-secondary" onclick="buscarPDF()">Buscar Archivo</button>
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <div id="pdfViewer"></div>
+          <br>
+          <br>
+          <br>
+
+          <footer class="footer mt-auto py-3 bg-light">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="texto-licencia" style="float:left; color:#804000;">©
+                    2023 Archivo General de Centroamérica Unidad de Informática</div>
+                </div>
+                <div class="col-md-6">
+                  <div class="texto-licencia" style=color:#804000;>Todos los
+                    derechos reservados Archivo General de Centro América</div>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <br>
+        </body>
+
+      </html>
